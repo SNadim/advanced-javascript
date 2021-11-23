@@ -1,4 +1,4 @@
-const numbers = [3, 4, 5, 6, 7, 8];
+// const numbers = [3, 4, 5, 6, 7, 8];
 // const output  = [];
 
 // for(let i = 0; i < numbers.length; i++) {
@@ -13,10 +13,10 @@ const numbers = [3, 4, 5, 6, 7, 8];
 // }
 // const square = element => element * element;
 // const square = x => x*x;
-// // numbers.map(function(element, index, array) {
-// //     console.log(element, index, array);
+// numbers.map(function(element, index, array) {
+//     console.log(element, index, array);
 
-// // });
+// });
 // const result = numbers.map(function(element) {
 //     return element * element;
 
@@ -25,8 +25,22 @@ const numbers = [3, 4, 5, 6, 7, 8];
 
 // console.log(result);
 
-const bigger = numbers.filter(x => x < 3);
+// const bigger = numbers.filter(x => x < 3);
 
-const isThere = numbers.find(x => x >5);
+// const isThere = numbers.find(x => x >5);
 
-console.log(isThere);
+// console.log(isThere);
+
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+    for(let i = 2; i < num; i++) {
+        if(num % 2 == 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+
+const result = array.filter(isPrime);
+console.log(result);
